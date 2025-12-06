@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 // PostgreSQL connection
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || "postgresql://admin:admin123@localhost:5433/todo_db",
+  connectionString: process.env.DATABASE_URL || "postgresql://admin:admin123@localhost:5432/todo_db",
 });
 
 let dbConnected = false;
